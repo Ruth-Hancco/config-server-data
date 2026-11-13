@@ -1,1 +1,22 @@
 
+server:
+  port: 8081
+
+spring:
+  application:
+    name: ms-catalogo-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ms_catalogo
+    username: postgres
+    password: TU_PASSWORD_POSTGRES
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
